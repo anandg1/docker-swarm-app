@@ -10,7 +10,7 @@ The application(here a php website) will be updated in the NFS server, from wher
 ## Pre-requesites:
 
 - Basic Knowledge in Docker, Docker swarm, AWS
-- 4 AWS instances, where one act initialized as the swarm manager and 3 as workers. All these are connected to an ALB
+- 4 AWS instances, where one act initialized as the swarm manager and 3 as workers. The workers are connected to an ALB
 
 ## Features:
 
@@ -114,7 +114,9 @@ exportfs -a
 systemctl restart nfs-kernel-server
 ```
  NB : Need to mount /var/nfs in the manager as well as all the 3 workers.
- 
+     
+The web applications files and the nginx conf resides in the NFS shared directory
+
 # Deploying Stack to Swarm
 
 ## 1) Set up a Docker registry
