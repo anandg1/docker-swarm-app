@@ -89,7 +89,7 @@ networks:
     # as directory, then fall back to displaying a 404.
     try_files $uri $uri/ /index.php?$args;
   }
-  # pass the PHP scripts to FastCGI server listening on wordpress:9000
+  # pass the PHP scripts to FastCGI server listening on php:9000
   location ~ \.php$ {
     fastcgi_split_path_info ^(.+\.php)(/.+)$;
     fastcgi_pass php:9000;          <====== php is the name of the container having php-fpm
