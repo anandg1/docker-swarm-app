@@ -147,7 +147,7 @@ Check that it’s running with
 ```sh
 docker stack services mystack
 ```
-Once it’s running, you should see 1/1 under REPLICAS for both services. This might take some time if you have a multi-node swarm, as images need to be pulled.
+Once it’s running, you should see 3/3 under REPLICAS for both services. This might take some time if you have a multi-node swarm, as images need to be pulled.
 
 If required increase the replica count(say 10) anytime in future by :
 ```sh
