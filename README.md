@@ -28,7 +28,7 @@ The application(here a php website) will be updated in the NFS server, from wher
  ## Architecture:
 ![
 alt_txt
-]()
+](https://github.com/anandg1/docker-swarm-app/blob/main/Architecture.jpg)
  ## Code:
  
  Docker-compose file
