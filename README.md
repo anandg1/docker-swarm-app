@@ -107,7 +107,7 @@ apt install nfs-kernel-server
 ```sh
 - Update the permissions and ownership of the directory
 - Grant NFS share access to Client systems by updating the exports file.
-- ```sh
+```sh
 vim /etc/exports
 /var/nfs IP(rw,sync,no_subtree_check)
 exportfs -a
