@@ -104,7 +104,8 @@ networks:
 - For installing NFS server: 
 ```sh
 apt install nfs-kernel-server
-```sh
+```
+
 - Update the permissions and ownership of the directory
 - Grant NFS share access to Client systems by updating the exports file.
 ```sh
